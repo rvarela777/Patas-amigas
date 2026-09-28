@@ -177,12 +177,18 @@ width: 50%;
 
 }
 
+body.dark-mode {
+
+background-color: #121212;
+
+color: #ffffff;
+}
+
 @media (min-width: 1200px) {
 
 body {
 
 max-width: 1200px;
-
 margin: auto;
 
 }
@@ -382,4 +388,21 @@ margin-top: var(--espaco-grande);
 
 text-align: center;
 
+}
+
+body.dark-mode header,
+body.dark-mode main,
+body.dark-mode .card,
+body.dark-mode .modal {
+background-color: #1e1e1e;
+color: #ffffff;
+}
+
+body.dark-mode a {
+color: #90caf9;
+}
+
+body.dark-mode h1,
+body.dark-mode h2 {
+color: #90caf9;
 }
