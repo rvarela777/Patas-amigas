@@ -19,8 +19,8 @@ conteudo.innerHTML = `
 <h2>Cadastro</h2>
  
 <form id="formCadastro">
-<fieldset>
  
+<fieldset>
 <legend>Dados Pessoais</legend>
  
 <p>Nome Completo</p>
@@ -30,17 +30,22 @@ conteudo.innerHTML = `
 <input type="email" required>
  
 <p>CPF</p>
-<input type="text" minlength="11" maxlength="11" pattern="[0-9]+" required>
+<input type="text" minlength="11" maxlength="11" required>
  
 <p>Telefone</p>
-<input type="tel" minlength="11" maxlength="11" pattern="[0-9]+" required>
+<input type="tel" minlength="11" maxlength="11" required>
  
 <p>CEP</p>
-<input type="text" minlength="8" maxlength="8" pattern="[0-9]+" required>
+<input type="text" minlength="8" maxlength="8" required>
  
-<button type="submit">Enviar Cadastro</button>
+<br><br>
+ 
+<button type="submit">
+Enviar Cadastro
+</button>
  
 </fieldset>
+ 
 </form>
  
 <p>Área destinada ao cadastro de voluntários e doadores.</p>
@@ -53,7 +58,10 @@ conteudo.innerHTML = `
 conteudo.innerHTML = `
 <section>
 <h2>Quem Somos</h2>
-<p>A Patas Amigas é uma ONG dedicada ao resgate, tratamento e adoção responsável de cães e gatos.</p>
+<p>
+A Patas Amigas é uma ONG dedicada ao resgate,
+tratamento e adoção responsável de cães e gatos.
+</p>
 </section>
 `;
 }
