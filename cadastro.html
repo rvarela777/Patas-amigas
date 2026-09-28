@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+<title>Cadastro de Voluntários e Doadores</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Cadastro de Voluntários e Doadores</h1>
+
+<button class="menu-mobile">
+
+☰
+
+</button>
+
+<nav>
+<a href="index.html">Início</a>
+<a href="projetos.html">Projetos</a>
+<a href="cadastro.html">Cadastro</a>
+</nav>
+
+</header>
+
+<main>
+
+<section>
+
+<h2>Dados Cadastrais</h2>
+
+<form if="formCadastro">
+
+<fieldset>
+
+<legend>Dados Pessoais</legend>
+
+<p>Nome Completo</p>
+<input type ="text" required>
+
+<p>E-mail</p>
+<input type="email" required>
+
+<p>CPF</p>
+<input type="text" minlength="11" maxlength="11" pattern="[0-9]+" required>
+
+<p>Telefone</p>
+<input type="tel" minlength="11" maxlength="11" pattern="[0-9]+" required>
+
+<p>CEP</p>
+<input type="text" minlength="8" maxlength="8" pattern="[0-9]+" required>
+
+</fieldset>
+
+<p id="mensagem"></p>
+
+<button>Enviar Cadastro</button>
+
+</form>
+
+<div class="toast">
+
+Cadastro enviado com sucesso.
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<p>Todos os direitos reservados</p>
+</footer>
+
+</body>
+
+</html>
+

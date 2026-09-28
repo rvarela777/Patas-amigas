@@ -1,0 +1,385 @@
+:root {
+
+--cor-principal: #2E7D32;
+--cor-secundaria: #66BB6A;
+--cor-destaque: #FB8C00;
+--cor-azul: #1976D2;
+
+--cor-branca: #FFFFFF;
+--cor-cinza-claro: #BDBDBD;
+--cor-cinza-escuro: #424242;
+--cor-preta: #000000;
+
+--titulo-grande: 32px;
+--titulo-medio: 28px;
+--titulo-secao: 24px;
+--texto-padrao: 16px;
+--texto-pequeno: 14px;
+
+--espaco-pequeno: 8px;
+--espaco-medio: 16px;
+--espaco-grande: 24px;
+--espaco-extra: 32px;
+--espaco-gigante: 48px;
+}
+
+body {background-color: var(--cor-cinza-claro);
+
+padding: var(--espaco-grande);
+
+}
+
+p {
+
+font-size: var(--texto-padrao);
+
+}
+
+img {
+
+width: 30%;
+
+border-radius: 10px;
+
+}
+
+nav {
+
+display: flex;
+
+gap: var(--espaco-medio);
+
+margin-top: var(--espaco-medio);
+
+margin-bottom: var(--espaco-grande);
+
+font-size: var(--texto-padrao);
+
+}
+
+h1 {
+
+color: var(--cor-principal);
+
+font-size: var(--titulo-grande);
+
+margin-bottom: var(--espaco-medio);
+
+}
+
+h2 {
+
+color: var(--cor-azul);
+
+font-size: var(--titulo-secao);
+
+margin-top: var(--espaco-grande);
+
+}
+
+a {
+
+color: var(--cor-preta);
+
+text-decoration: none;
+
+margin-right: var(--espaco-pequeno);
+
+}
+
+header {
+
+display: flex;
+
+flex-direction: column;
+
+background-color: var(--cor-branca);
+
+padding: var(--espaco-grande);
+
+border-radius: 10px;
+
+margin-bottom: var(--espaco-grande);
+
+}
+
+main {
+
+background-color: var(--cor-branca);
+
+padding: var(--espaco-grande);
+
+border-radius: 10px;
+
+display: grid;
+
+grid-template-columns: repeat(12, 1fr);
+
+gap: var(--espaco-grande);
+
+}
+
+section {
+
+grid-column: span 12;
+
+}
+
+@media (max-width: 768px) {
+
+img {
+
+width: 100%;
+
+}
+
+}
+
+@media (max-width: 600px) {
+
+.menu-mobile {
+
+display: block;
+
+}
+
+body {
+
+padding: var(--espaco-medio);
+
+}
+
+nav {
+
+display: none;
+
+}
+
+}
+
+@media (max-width: 480px) {
+
+h1 {
+
+font-size: 24px;
+
+}
+
+}
+
+@media (max-width: 900px) {
+
+img {
+
+width: 50%;
+
+}
+
+}
+
+@media (min-width: 1200px) {
+
+body {
+
+max-width: 1200px;
+
+margin: auto;
+
+}
+
+}
+
+footer {
+
+margin-top: var(--espaco-grande);
+
+padding: var(--espaco-medio);
+
+text-align: center;
+
+}
+
+form {
+
+display: flex;
+
+flex-direction: column;
+
+}
+
+a:hover {
+
+cursor: pointer;
+
+color: var(--cor-principal);
+
+}
+
+button {
+
+background-color: var(--cor-principal);
+
+color: var(--cor-branca);
+
+padding: var(--espaco-medio);
+
+border: none;
+
+border-radius: 5px;
+
+}
+
+button:hover {
+
+cursor: pointer;
+
+background-color: var(--cor-secundaria);
+
+}
+
+input {
+
+padding: var(--espaco-pequeno);
+
+margin-bottom: var(--espaco-medio);
+
+border-radius: 5px;
+
+border: 1px solid var(--cor-cinza-escuro);
+
+}
+
+input:focus {
+
+border: 2px solid var(--cor-azul);
+
+outline: none;
+
+}
+
+.card {
+
+background-color: var(--cor-branca);
+
+padding: var(--espaco-grande);
+
+border-radius: 10px;
+
+margin-bottom: var(--espaco-grande);
+
+border: 1px solid var(--cor-cinza-escuro);
+
+}
+
+.card:hover {
+
+background-color: var(--cor-cinza-claro);
+
+cursor: pointer;
+
+}
+
+button:active {
+
+background-color: var(--cor-destaque);
+
+}
+
+input:valid {
+
+border:2px solid var(--cor-principal);
+
+}
+
+input:invalid {
+
+border: 2px solid red;
+
+}
+
+.menu-mobile {
+
+display: none;
+
+background-color: var(--cor-principal);
+
+color: var(--cor-branca);
+
+padding: var(--espaco-pequeno);
+
+border: none;
+
+border-radius: 5px;
+
+}
+
+
+.badge {
+
+background-color: var(--cor-destaque);
+
+color: var(--cor-branca);
+
+padding: var(--espaco-pequeno);
+
+border-radius: 5px;
+
+font-size: var(--texto-pequeno);
+
+display: inline-block;
+
+margin-left: var(--espaco-pequeno);
+
+}
+
+.alerta {
+
+grid-column: span 12;
+
+background-color: #FFE0B2;
+
+padding: var(--espaco-medio);
+
+border-left: 5px solid var(--cor-destaque);
+
+border-radius: 5px;
+
+margin-bottom: var(--espaco-medio);
+
+}
+
+.toast {
+
+grid-column: span 12;
+
+background-color: var(--cor-principal);
+
+color: var(--cor-branca);
+
+padding: var(--espaco-medio);
+
+border-radius: 5px;
+
+margin-top: var(--espaco-grande);
+
+text-align: center;
+
+}
+
+.modal {
+
+grid-column: span 12;
+
+background-color: var(--cor-branca);
+
+border: 1px solid var(--cor-cinza-escuro);
+
+padding: var(--espaco-grande);
+
+border-radius: 10px;
+
+margin-top: var(--espaco-grande);
+
+text-align: center;
+
+}
