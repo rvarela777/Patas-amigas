@@ -36,3 +36,5 @@ conteudo.innerHTML = `
 window.addEventListener("hashchange", renderizarPagina);
 
 renderizarPagina();
+
+// Funcionalidade SPA
