@@ -11,3 +11,5 @@ campoNome.value = nomeSalvo;
 }
 
 }
+
+// Persistência com localStorage
