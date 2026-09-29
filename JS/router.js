@@ -6,17 +6,59 @@ const rota = window.location.hash;
 if (rota === "#projetos") {
  
 conteudo.innerHTML = `
-<section class="card">
-<h2>Projetos</h2>
-<p>Conheça as ações desenvolvidas pela ONG Patas Amigas.</p>
+
+<section>
+
+<div class="alerta">
+🐾 A campanha de inverno está necessitando de doações!
+</div>
+
+<div class="card">
+<h2>Doações <span class="badge">Urgente</span></h2>
+<p>
+Recebemos doações de ração, medicamentos e recursos financeiros.
+</p>
+</div>
+
+<div class="card">
+<h2>Adoção Responsável <span class="badge">Novo</span></h2>
+<p>
+Promovemos feiras de adoção para ajudar cães e gatos a encontrarem um lar.
+</p>
+</div>
+
+<div class="card">
+<h2>Voluntariado <span class="badge">Ativo</span></h2>
+<p>
+Os voluntários auxiliam nos cuidados dos animais e em eventos da ONG.
+</p>
+</div>
+
+<div class="modal">
+<h2>Confirmação</h2>
+<p>
+Deseja participar de programas de voluntariado?
+</p>
+
+<button>
+Confirmar
+</button>
+</div>
+
+<div class="toast">
+Inscrição realizada com sucesso.
+</div>
+
 </section>
+
 `;
  
 } else if (rota === "#cadastro") {
  
 conteudo.innerHTML = `
 <section>
-<h2>Cadastro</h2>
+
+<h1>Cadastro de Voluntários e Doadores</h1>
  
 <form id="formCadastro">
  
@@ -40,16 +82,18 @@ conteudo.innerHTML = `
  
 <br><br>
  
+</fieldset>
+
 <button type="submit">
 Enviar Cadastro
 </button>
  
-</fieldset>
- 
 </form>
- 
-<p>Área destinada ao cadastro de voluntários e doadores.</p>
- 
+
+<div class="toast">
+Cadastro enviado com sucesso.
+</div>
+  
 </section>
 `; 
 
@@ -59,13 +103,13 @@ conteudo.innerHTML = `
 <section>
  
 <h2>Quem Somos</h2>
- 
-<img src="Imagens/gato.jpg" alt="Foto de um gato se divertindo">
- 
+
 <p>
 A Patas Amigas é uma ONG dedicada ao resgate,
 tratamento e adoção responsável de cães e gatos.
 </p>
+ 
+<img src="Imagens/gato.jpg" alt="Foto de um gato se divertindo">
  
 <div class="alerta">
 🐾 Mais de 100 animais já encontraram um novo lar através dos nossos projetos.
