@@ -418,10 +418,6 @@ align-items: center;
 box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
  
-main {
-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-}
- 
 nav {
 justify-content: center;
 }
@@ -438,10 +434,6 @@ background-color: var(--cor-principal);
 color: white;
 }
  
-section {
-line-height: 1.7;
-}
- 
 img {
 display: block;
 width: 60%;
@@ -449,68 +441,18 @@ max-width: 500px;
 margin: 20px auto;
 border-radius: 15px;
 }
- 
-#formCadastro {
-max-width: 600px;
-}
- 
-#formCadastro fieldset {
-padding: 25px;
-border-radius: 10px;
-background-color: #fafafa;
-}
- 
-#formCadastro input {
-width: 100%;
-box-sizing: border-box;
-}
- 
-#formCadastro button {
-width: 100%;
-margin-top: 10px;
-}
- 
+
 footer {
 background-color: var(--cor-principal);
 color: white;
 border-radius: 10px;
 }
  
-h1::before {
-content: "🐾 ";
-}
-
-#conteudo p {
-max-width: 800px;
-}
- 
-#conteudo img {
-display: block;
-width: 80%;
+#formCadastro {
 max-width: 600px;
-margin: 20px auto;
 }
- 
-h2 {
-text-align: center;
+  
+#formCadastro button {
+width: 100%;
 }
 
-#conteudo {
-width: 100%;
-}
- 
-#conteudo section {
-width: 100%;
-max-width: 1000px;
-margin: 0 auto;
-}
- 
-#conteudo p {
-width: 100%;
-max-width: none;
-}
- 
-main {
-display: block;
-}
-``
