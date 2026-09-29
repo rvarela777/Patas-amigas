@@ -51,18 +51,36 @@ Enviar Cadastro
 <p>Área destinada ao cadastro de voluntários e doadores.</p>
  
 </section>
-`;
- 
+`; 
+
 } else {
  
 conteudo.innerHTML = `
 <section>
+ 
 <h2>Quem Somos</h2>
+ 
+<img src="Imagens/gato.jpg" alt="Foto de um gato se divertindo">
+ 
 <p>
 A Patas Amigas é uma ONG dedicada ao resgate,
 tratamento e adoção responsável de cães e gatos.
 </p>
+ 
+<div class="alerta">
+🐾 Mais de 100 animais já encontraram um novo lar através dos nossos projetos.
+</div>
+ 
+<h2>Contato</h2>
+ 
+<p><strong>Email:</strong> contato@patasamigas.org.br</p>
+ 
+<p><strong>Telefone:</strong> (11) 99999-9999</p>
+ 
+<p><strong>Endereço:</strong> São Paulo - SP</p>
+ 
 </section>
+ 
 `;
 }
 }
