@@ -479,3 +479,38 @@ border-radius: 10px;
 h1::before {
 content: "🐾 ";
 }
+
+#conteudo p {
+max-width: 800px;
+}
+ 
+#conteudo img {
+display: block;
+width: 80%;
+max-width: 600px;
+margin: 20px auto;
+}
+ 
+h2 {
+text-align: center;
+}
+
+#conteudo {
+width: 100%;
+}
+ 
+#conteudo section {
+width: 100%;
+max-width: 1000px;
+margin: 0 auto;
+}
+ 
+#conteudo p {
+width: 100%;
+max-width: none;
+}
+ 
+main {
+display: block;
+}
+``
