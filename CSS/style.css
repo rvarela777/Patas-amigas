@@ -111,17 +111,13 @@ padding: var(--espaco-grande);
 
 border-radius: 10px;
 
-display: grid;
-
-grid-template-columns: repeat(12, 1fr);
-
-gap: var(--espaco-grande);
-
 }
 
 section {
 
-grid-column: span 12;
+max-width: 900px;
+
+margin: 0 auto;
 
 }
 
@@ -436,7 +432,7 @@ color: white;
  
 img {
 display: block;
-width: 60%;
+width: 100%;
 max-width: 500px;
 margin: 20px auto;
 border-radius: 15px;
